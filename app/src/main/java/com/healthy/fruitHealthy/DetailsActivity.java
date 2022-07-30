@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.healthy.fruitHealthy.databinding.ActivityDetailsBinding;
@@ -27,6 +28,12 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DetailsActivity.this,HealthyActivity.class));
+            }
+        });
+        binding.btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DetailsActivity.this, "Next Activity OnSuccessfully", Toast.LENGTH_SHORT).show();
             }
         });
     }
