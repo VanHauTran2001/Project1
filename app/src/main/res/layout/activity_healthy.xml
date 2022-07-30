@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HealthyActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#4DD553"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fruit Healthy"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/imgBack"
+            android:textStyle="bold"
+            android:id="@+id/txtTitle"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_below="@id/txtTitle"
+            android:id="@+id/recylerFruit"/>
+    </RelativeLayout>
+</layout>

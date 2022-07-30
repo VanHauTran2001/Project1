@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4DD553"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FRUIT IS GOOD FOR HEALTHY"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="60dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/custom_circle"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FRUITER"
+            android:background="@drawable/custom_button"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:id="@+id/btnFruit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEALTHY"
+            android:background="@drawable/custom_button"
+            android:textSize="20dp"
+            android:id="@+id/btnHealthy"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WHAT UP ?"
+            android:background="@drawable/custom_button"
+            android:textSize="20dp"
+            android:id="@+id/btnWhatup"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</layout>
